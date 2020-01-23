@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+
+}
+body{
+     margin: 0;
+}
+
+header{
+background-color: #a4b3bb99;
+padding: 15px 0;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(20, 130, 158);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-left: -15px;
+}
+
+.navbar-light .navbar-brand:hover{
+    
+  color: aliceblue;
+}
+
+img{
+    max-width: 250px;
+    max-height: 203px;
+    min-width: 250px;
+    min-height: 203px;
+    margin-bottom: 25px;
+}
+
+  img:hover{ 
+    opacity: 0.6;
+}
+
+
+.effect{
+    position: relative;
+    overflow: hidden;
+}
+.effect:before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 203px;
+    top: 0;
+    left: 0;
+    background-color: #0000002b;
+}
+
+.effect:hover:before{
+
+    background-color: #0000007a;
+
+}
+.effect h2 {
+    position: absolute;
+    color: #fff;
+    bottom: 38px;
+    left: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0;
+}
+ .effect:hover h2{
+    opacity: 1;
+    z-index: 1;
+ }
+
+.TopRight::after{
+    content: "";
+    position: absolute;
+    height:0;
+    top: -12px;
+    right: 50px;
+    border-right: 2px solid #fff;
+    -webkit-transform: scaleY(.8);
+    -moz-transform: scaleY(.8);
+    -ms-transform: scaleY(.8);
+    transform: scaleY(.8);
+    -moz-transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in;
+}
+
+.effect:hover .TopRight::after{
+    height: 100%;
+}
+
+.TopRight::before{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 0;
+    border-top: 2px solid #fff;
+    top: 5%;
+    -webkit-transform: scaleX(.9);
+    -moz-transform: scaleX(.9);
+    -ms-transform: scaleX(.9);
+    transform: scaleX(.9);
+    -moz-transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.effect:hover .TopRight::before{
+    width: 250px;
+}
+
+.LeftBottom::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: 35px;
+    left: -19px;
+    border: 1px solid #fff;
+    -webkit-transform: scaleX(.78);
+    -moz-transform: scaleX(.78);
+    -ms-transform: scaleX(.78);
+    transform: scaleX(.78);
+    -moz-transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.effect:hover .LeftBottom::after{
+   width:100% ;
+}
+.LeftBottom::before{
+    content: "";
+    position: absolute;
+    left: 12px;
+    height:0;
+    bottom: 24px;
+    border-left: 2px solid #fff;
+    -webkit-transform: scaleY(.89);
+    -moz-transform: scaleY(.89);
+    -ms-transform: scaleY(.89);
+    transform: scaleY(.89);
+    -moz-transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+
+.effect:hover .LeftBottom::before{
+    height: 203px;
+}
+
+.nicescroll-cursors{
+    height: 40px;
+}
+
+
+.show-section{
+    background-color: #358ca1b8;
+}
+
+
+footer{
+    background-color: #a2a2a2a1;
+    padding: 55px 0;
+}
+.footer-menu{
+    width: 50%;
+    float: left;
+}
+.footer-menu ul{}
+.footer-menu ul li{
+    float: left;
+    list-style: none;
+    font-size: 20px;
+}
+
+
+
+.social-link{
+    width: 50%;
+    float: left;
+}
+.social-link ul{
+    text-align: right;
+}
+.social-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-link ul li a{
+    color: #333;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -ms-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.social-link ul li a:hover{
+    color: #c4c4c4;
+    background: #228ea9c7;
+}
+
+/*lg*/
+@media(max-width: 1199px){
+    
+}/*md*/
+@media(max-width: 991px){
+    .show-section{
+        text-align: center;
+    }
+    footer{
+    }
+    .footer-menu ul li{
+        font-size: 20px;
+    }
+    
+}/*sm*/
+@media(max-width: 767px){
+    .show-section{
+        text-align: center;
+    }
+    footer{
+
+    background-color: #a2a2a2a1;
+    padding: 55px  0px  100px 0px;
+}
+.footer-menu ul li {
+    float: left;
+    list-style: none;
+    font-size: 18px;
+}
+    
+}
